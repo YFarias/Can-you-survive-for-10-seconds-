@@ -2,7 +2,7 @@
 class Game {
     constructor () {
         this.bg = new Image()
-        this.bg.src = "./blue.png";
+        this.bg.src = "./background-black.png";
         this.navy = new Navy()
         this.meteorsArr = [new Meteors("./meteorBrown_big1.png", 150,0)]
         this.isWon = false;
@@ -58,7 +58,7 @@ class Game {
         this.isGameOver = true
         canvas.style.display = "none";
         gameoverScreen.style.display = "flex"
-
+        
     }
                 
     gameLoop = () => {
@@ -96,7 +96,7 @@ class Game {
         this.meteorsArr.forEach((eachMeteor) => {
            if (this.navy.navyCollision(eachMeteor)){
                this.gameover()
-
+               
            } else {
                this.count +=1
                this.score = Math.floor(this.count/1000);
@@ -109,7 +109,7 @@ class Game {
             this.isWon = true;
             this.gameWin();
         }
-
+        timer.innerText =  this.score
          
         // ANIMATION FRAME and GAME LOGIC
         if (!this.isGameOver && !this.isWon) {

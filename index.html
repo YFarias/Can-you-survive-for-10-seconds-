@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can you survive 10seconds?</title>
+    <title>Can you survive for 10 seconds?</title>
     <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
     
     <div class="container">
-      
+          <div>
+            <h3>Timer:<span id="timer"></span></h3>
+          </div>
+              
         <!-- START SCREEN -->
         <div id="start-screen" class="container">
           <img src="./imagens/startscreen.png" width="500" alt="logo">
@@ -19,7 +22,7 @@
         </div>
         
         <!-- GAME SCREEN -->
-        <canvas id="my-canvas" width="620" height="800"></canvas>
+        <canvas id="my-canvas" width="600" height="760"></canvas>
                           
         <!-- GAME OVER SCREEN -->
         
@@ -33,7 +36,7 @@
           <button id="restart-btn1">Play Again!</button>
         </div>
         
-
+        
     </div>
     <script src="./main.js"></script>
     <script src="./game.js"></script>

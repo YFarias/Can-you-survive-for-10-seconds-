@@ -11,7 +11,7 @@ let restartBtn1 = document.querySelector("#restart-btn1")
 let startScreen = document.querySelector("#start-screen")
 let winScreen = document.querySelector("#win-screen")
 let gameoverScreen = document.querySelector("#gameover-screen")
-
+let timer = document.querySelector("#timer")
 
 //OBJECT
 let game;
