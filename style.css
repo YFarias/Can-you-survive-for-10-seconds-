@@ -1,0 +1,41 @@
+h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#my-canvas {
+    background-color: rgb(156, 151, 151);
+  }
+  
+  #start-btn, #restart-btn, #restart-btn1 {
+    background-color: #07569f;
+    color: rgb(253, 255, 250);
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    padding-top: -50px;
+  }
+  
+  .container {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #my-canvas {
+    display:none;
+  }
+  
+  #gameover-screen{
+    display: none;
+  }
+
+  #win-screen{
+    display: none;
+  }
+  #count {
+    display: none;
+  }
+  
