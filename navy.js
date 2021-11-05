@@ -1,7 +1,7 @@
 class Navy {
     constructor(){
         this.navyImage = new Image()
-        this.navyImage.src="./ufoYellow.gif"
+        this.navyImage.src="./ufoYellow.png"
         this.width = 40;
         this.height = 40;
         this.navyX = canvas.width/2

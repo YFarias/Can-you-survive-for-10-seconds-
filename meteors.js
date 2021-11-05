@@ -12,6 +12,6 @@ class Meteors {
         ctx.drawImage(this.meteorsImage, this.x, this.y, this.width, this.height)
     }
     meteorsMove = () => {
-        this.y+=15
+        this.y+=16
     }
 }

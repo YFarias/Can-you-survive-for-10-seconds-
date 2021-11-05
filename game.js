@@ -29,25 +29,14 @@ class Game {
 
             this.meteorsArr.push(bigMeteorOne)
             
-            let randomPosXTwo = randomPosX+200
+            let randomPosXTwo = randomPosX+350
             
             let bigMeteorTwo = new Meteors ("./meteorGrey_big3.png",randomPosXTwo)
             
             this.meteorsArr.push(bigMeteorTwo)
             
 
-            let randomPosXThree = randomPosX+400
-            
-            let bigMeteorThree = new Meteors ("./meteorBrown_big1.png",randomPosXThree)
-            
-            this.meteorsArr.push(bigMeteorThree)
-            
-            let randomPosXFour = randomPosX+600
-            
-            let bigMeteorFour = new Meteors ("./meteorGrey_big3.png",randomPosXFour)
-            
-            this.meteorsArr.push(bigMeteorFour)
-            
+              
                             
             if(length>50) {
               this.isWon = true  
@@ -110,7 +99,7 @@ class Game {
 
            } else {
                this.count +=1
-               this.score = this.count/1000;
+               this.score = Math.floor(this.count/1000);
                console.log(this.score)
             }
             
