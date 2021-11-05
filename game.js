@@ -29,17 +29,19 @@ class Game {
             
             this.meteorsArr.push(bigMeteorOne)
                         
-            let randomPosXTwo = randomPosX+250
+            let randomPosXTwo = randomPosX+350
             
             let bigMeteorTwo = new Meteors ("./meteorGrey_big3.png",randomPosXTwo)
             
             this.meteorsArr.push(bigMeteorTwo)
             
-            let randomPosXThree = randomPosX+450
+            let randomPosXThree = randomPosX+500
             
             let bigMeteorThree = new Meteors ("./meteorBrown_big1.png",randomPosXThree)
             
             this.meteorsArr.push(bigMeteorThree)
+
+            
            
         
                                        
@@ -67,7 +69,7 @@ class Game {
     }
                 
     gameLoop = () => {
-        //console.log(this.meteorsArr)
+        console.log(this.meteorsArr)
         //CLEAR CANVAS
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         
